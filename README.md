@@ -84,23 +84,23 @@ TASK 1:
 
     int main()
     {
-      int number = 10;
+        int number = 10;
 
-      cout << "how much do you have?" << endl;
-      cin >> number;
-      if (number >= 5) {
-        cout << "go get coffee";
-      }
-      else {
-        if (number <= 5) {
-          cout << "go for a walk around town";
+        cout << "how much do you have?" << endl;
+        cin >> number;
+        if (number >= 5) {
+            cout << "go get coffee";
+        }
+        else {
+            if (number <= 5) {
+                cout << "go for a walk around town";
 
 
 
-       }
-      
+            }
+        }
     }
-
+ 
  TASK 3: SCENARIO 2
  
      #include<iostream>
