@@ -79,54 +79,32 @@ TASK 1:
   
   TASK 3: SCENARIO 1
   
-      #include<iostream>
+         #include <iostream>
     using namespace std;
 
     int main()
     {
-        int number = 10;
+        int mins, money;
 
-        cout << "how much do you have?" << endl;
-        cin >> number;
-        if (number >= 5) {
-            cout << "go get coffee";
-        }
-        else {
-            if (number <= 5) {
-                cout << "go for a walk around town";
+        cout << "How many minutes before your friend goes with you? ";
+        cin >> mins;
 
+        if (mins >= 15) {
+            cout << "\nSince your friend is going to arrive for another 15 minutes or more,\nhow much money do you have in change? ";
+            cin >> money;
 
-
+            if (money >= 5) {
+                cout << "\nGo buy a coffee" << endl;
+            } else {
+                cout << "\nConsidering that you don't have enough change to buy a coffee,\ngo for a walk around the town" << endl;
             }
         }
+        if (mins < 15) {
+            cout << "\nYour friend is going to arrive soon, sit in the food zone and wait";
+    return 0;
+        }
     }
  
- TASK 3: SCENARIO 2
- 
-     #include<iostream>
-    #include<string>
-    using namespace std;
-
-    int main()
-    {
-      cout << "what are you gonna do?\n" << endl;
-      cout << "1. sit in the foodzone\n";
-      cout << "2. walk around\n";
-      cout << "3. leave him\n";
-      //string a = "sit in the foodzone"
-      //string b = "sit in the foodzone"
-      cout << "type in the number that represents your decision\n";
-      string a;
-      cin >> a;
-      if (a == "1.") {
-        cout << "smart choice\n";
-      }
-      else {
-        cout << "bad choice\n";
-      }
-
-    }
-
  TASK 4:
  
      #include <iostream>
