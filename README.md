@@ -129,16 +129,52 @@ TASK 1:
 
  TASK 4:
  
-      #include<iostream>
+     #include <iostream>
     using namespace std;
 
     int main()
     {
-      int number = 7.0;
-      cout << "enter the magnitude of the earthquake : ";
-      cin >> number;
+        double magnitude;
 
-      if (number <= 8.0) {
-        cout << "the descriptor says that it is major.";
-      }
+        cout << "Enter the magnitude of the earthquake: ";
+        cin >> magnitude;
+
+        if (magnitude <= 2.0)
+        {
+            cout << "The earhquake is MICRO" << endl;
+        }
+        else if (magnitude >= 2.0 && magnitude <= 3.0)
+        {
+            cout << "The earthquake is VERY MINOR" << endl;
+        }
+        else if (magnitude >= 3.0 && magnitude <= 4.0)
+        {
+            cout << "The earthquake is MINOR" << endl;
+        }
+        else if (magnitude >= 4.0 && magnitude <= 5.0)
+        {
+            cout << "The earthquake is LIGHT" << endl;
+        }
+        else if (magnitude >= 5.0 && magnitude <= 6.0)
+        {
+            cout << "The earthquake is MODERATE" << endl;
+        }
+        else if (magnitude >= 6.0 && magnitude <= 7.0)
+        {
+            cout << "The earthquake is STRONG" << endl;
+        }
+        else if (magnitude >= 7.0 && magnitude <= 8.0)
+        {
+            cout << "The earthquake is MAJOR" << endl;
+        }
+        else if (magnitude >= 8.0 && magnitude <= 10.0)
+        {
+            cout << "The earthquake is GREAT" << endl;
+        }
+        else if (magnitude >= 10)
+        {
+            cout << "The earthquake is METEORIC" << endl;
+
+            return 0;
+        }
     }
