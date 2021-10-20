@@ -46,36 +46,36 @@ TASK 1:
   
  TASK 2:
  
-      #include<iostream>
-    #include<string>
+        #include <iostream>
+    #include <ctype.h>
     using namespace std;
-
-    int main()
-    {
-        bool musicalFriend = true;
-        string friendPlays = "guitar";
-        string yesNo;
-
-        cout << "What intrument do you play?" << endl;
-        cin >> friendPlays;
-
-        if (friendPlays == "guitar") {
-            cout << "do you want to join the band?" << endl;
-            cin >> yesNo;
-
-            if (yesNo == "yes") {
-                cout << " welcome to the band" << endl;
+    int main() {
+        bool musicfriend;
+        bool musicinst;
+        cout << "You want to start a band, but you need another person to play with. Do you have a friend that can play an instrument to start a band with?" << endl;
+        cout << "Enter 1 if yes, 0 if no" << endl;
+        cin >> musicfriend;
+        if (musicfriend == true) {
+            cout << "Can he play the guitar and/or drums?" << endl;
+            cout << "Enter 1 if yes, 0 if no" << endl;
+            cin >> musicinst;
+            if (musicinst == true) {
+                cout << "They qualify!" << endl;
             }
-            else
-                cout << " okay thank you for participating" << endl;
-
+            else if (musicinst == false) {
+                cout << "Find another friend that can play those instruments" << endl;
+            }
+            else {
+                cout << "Invalid. Try again." << endl;
+            }
         }
-        else {
-            cout << "okay bye" << endl;
+        else if(musicfriend == false){
+            cout << "Make a friend that can play instruments then" << endl;
         }
-
-
+        cin.get();
+        return 0;
     }
+
   
   TASK 3: SCENARIO 
   
