@@ -1,5 +1,78 @@
 # Lecture-7---Exercises---Sept-27
-TASK 1:
+LETTER CHECKER
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        cout << "Enter a letter to see whether its a vowel or consonant\n";
+        char c;
+        cin >> c;
+        //isalpha is a built in function to check for alphabet values in c++
+        if (!isalpha(c))
+        {
+            cout << "you entered an incorrect value";
+        }
+        else if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+        {
+            cout << "you entered a vowel";
+
+        }
+
+
+        else
+        {
+            cout << "you entered a consonant";
+        }
+    }
+FRANCE
+
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+        cout << "What is the capital of France?\n";
+        string capital;
+        cin >> capital;
+
+        if (capital == "Paris" || capital == "paris" || capital == "PARIS")
+        {
+            cout << "You enter the correct answer";
+        }
+        else 
+        {
+            cout << "Sorry wrong answer";
+        }
+
+        return 0;
+    }
+THEME PARK
+
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+        cout << "Please enter your height in meters to check whether you can ride or not\n";
+        double h, age;
+        cin >> h;
+        cout << "Please enter your age to check whether you can ride or not\n";
+        cin >> age;
+        if (age >= 5 && h >= 0.6)
+        {
+            cout << "You can ride";
+        }
+        else if (age < 5 && h < 0.5)
+        {
+            cout << "Sorry you cannot ride";
+        }
+        else
+        {
+            cout << "Incorrect input";
+        }
+        return 0;
+    }
+TASK 1: Mark my Word Grade
 
     #include <iostream>
     using namespace std;
@@ -44,7 +117,7 @@ TASK 1:
       return 0;
     }
   
- TASK 2:
+ TASK 2: Starting a Band
  
         #include <iostream>
     #include <ctype.h>
@@ -77,7 +150,7 @@ TASK 1:
     }
 
   
-  TASK 3: SCENARIO 
+  TASK 3: Time Killing
   
          #include <iostream>
     using namespace std;
@@ -105,7 +178,7 @@ TASK 1:
         }
     }
  
- TASK 4:
+ TASK 4: Earthquake
  
      #include <iostream>
     using namespace std;
